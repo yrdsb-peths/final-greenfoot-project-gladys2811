@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Rocket
+ * Write a description of class Ninja here.
  * 
- * @author Gladys 
- * @version December 2022
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Rocket extends Actor
+public class Ninja extends Actor
 {
     /**
-     * Act - do whatever the Rocket wants to do. This method is called whenever
+     * Act - do whatever the Ninja wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
