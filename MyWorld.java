@@ -26,5 +26,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
+        Ninja ninja = new Ninja();
+        addObject(ninja,58,372);
     }
 }
