@@ -1,13 +1,16 @@
 #Greenfoot project file
 class.MyWorld.image=Background.png
-class.Ninja.image=tile000.png
+class.Ninja.image=idle1.png.png
 class.TitleScreen.image=rocket.png
+dependency1.from=MyWorld
+dependency1.to=Ninja
+dependency1.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
 editor.fx.0.y=100
 height=1056
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=4
 project.charset=windows-1252
 publish.hasSource=false
