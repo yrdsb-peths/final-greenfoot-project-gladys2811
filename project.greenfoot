@@ -1,7 +1,8 @@
 #Greenfoot project file
 class.MyWorld.image=Background.png
 class.Ninja.image=idle1.png.png
-class.TitleScreen.image=rocket.png
+class.NinjaStar.image=ezgif.com-gif-maker\ (4).png
+class.TitleScreen.image=Background.png
 dependency1.from=MyWorld
 dependency1.to=Ninja
 dependency1.type=UsesDependency
@@ -59,6 +60,6 @@ target4.x=0
 target4.y=0
 version=3.0.0
 width=1936
-world.lastInstantiated=MyWorld
+world.lastInstantiated=TitleScreen
 xPosition=-8
 yPosition=-8
