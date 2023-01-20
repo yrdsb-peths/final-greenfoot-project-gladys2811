@@ -28,5 +28,7 @@ public class MyWorld extends World
     {
         Ninja ninja = new Ninja();
         addObject(ninja,58,372);
+        NinjaStar ninjaStar = new NinjaStar();
+        addObject(ninjaStar,583,368);
     }
 }

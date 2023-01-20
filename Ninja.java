@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ninja here.
+ * Ninja
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gladys
+ * @version January 2023
  */
 public class Ninja extends Actor
 {
