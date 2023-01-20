@@ -16,5 +16,5 @@ public class NinjaStar extends Actor
     {
         // Add your action code here.
         move(-1);
-    }    
+    }   
 }
