@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * TitleScreen
+ * Write a description of class TitleScreen here.
  * 
- * @author Gladys
- * @version Jan 2023
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class TitleScreen extends World
 {
-    Label titleLabel = new Label("Ninja Jump", 60);
+    Label titleLabel = new Label ("Ninja Jump", 60);
     /**
      * Constructor for objects of class TitleScreen.
      * 

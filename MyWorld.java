@@ -19,7 +19,6 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
-
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -27,8 +26,8 @@ public class MyWorld extends World
     private void prepare()
     {
         Ninja ninja = new Ninja();
-        addObject(ninja,58,372);
+        addObject(ninja,58,371);
         NinjaStar ninjaStar = new NinjaStar();
-        addObject(ninjaStar,583,368);
+        addObject(ninjaStar,575,369);
     }
 }
