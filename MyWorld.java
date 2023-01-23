@@ -9,6 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     SimpleTimer starTimer = new SimpleTimer();
+    Label scoreLabel;
+    int score = 1;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -20,29 +22,6 @@ public class MyWorld extends World
         prepare();
     }
     
-    public void act()
-    {
-        if (starTimer.millisElapsed () > 400)
-        {
-            starTimer.mark();
-            createNinjaStar();
-        }
-    }
-    
-    public void gameOver()
-    {
-        Label gameOverLabel = new Label ("Game Over", 100);
-        addObject(gameOverLabel, 300, 200);
-    }
-    
-    public void createNinjaStar()
-    {
-        Ninja star = new Ninja();
-        int x = 575;
-        int y = 369;
-        addObject(star, x, y);
-    }
-    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -51,7 +30,15 @@ public class MyWorld extends World
     {
         Ninja ninja = new Ninja();
         addObject(ninja,58,371);
-        NinjaStar ninjaStar = new NinjaStar();
-        addObject(ninjaStar,575,369);
+        NinjaStar star = new NinjaStar();
+        addObject(star, 575, 369);
+        Label scoreLabel = new Label(score, 60);
+        addObject(scoreLabel,24,30);
+    }
+    
+    public void addScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
     }
 }

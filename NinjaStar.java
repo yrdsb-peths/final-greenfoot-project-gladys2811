@@ -8,20 +8,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class NinjaStar extends Actor
 {
+    MyWorld world;
     /**
      * Act - do whatever the NinjaStar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+
+    
     public void act() 
     {
         // Ninja star heads towards the Ninja
-        move(-1);
+        move(-8);
         
         //Game over if Ninja touches the ninja star
-        MyWorld world = (MyWorld) getWorld();
         if (this.isAtEdge())
         {
             getWorld().removeObject(this);
+            world.addObject(this,575,369);
+            world.addScore();
         }
         else if (this.isTouching(Ninja.class))
         {
