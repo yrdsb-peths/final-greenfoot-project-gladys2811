@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * My World.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gladys Lee
+ * @version January 2023
  */
 public class MyWorld extends World
 {
@@ -19,6 +19,20 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label ("Game Over", 100);
+        addObject(gameOverLabel, 300, 200);
+    }
+    
+    public void createNinjaStar()
+    {
+        Ninja star = new Ninja();
+        int x = 575;
+        int y = 369;
+        addObject(star, x, y);
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

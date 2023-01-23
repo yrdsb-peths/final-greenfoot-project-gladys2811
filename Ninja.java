@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Ninja
+ * Ninja.
  * 
  * @author Gladys
  * @version January 2023
@@ -23,12 +23,14 @@ public class Ninja extends Actor
         fall();
         if(Greenfoot.isKeyDown("space") && getY() > getWorld().getHeight() - 30) jump();
     }
+    
     public void fall()
     {
         setLocation(getX(), getY() + velocity);
         if (getY() > getWorld().getHeight() - 30) velocity = 0;
         else velocity += GRAVITY;
     }
+    
     public void jump()
     {
         velocity = - 15;

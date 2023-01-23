@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NinjaStar here.
+ * Ninja Star.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gladys 
+ * @version January 2023
  */
 public class NinjaStar extends Actor
 {
@@ -14,7 +14,24 @@ public class NinjaStar extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        // Ninja star heads towards the Ninja
         move(-1);
+        
+        //Game over if Ninja touches the ninja star
+        MyWorld world = (MyWorld) getWorld();
+        if (getX() <= 0)
+        {
+            world.removeObject(this);
+            GameOver gameWorld = new GameOver();
+            Greenfoot.setWorld(gameWorld);
+        }
+        
+        else if (this.isTouching(Ninja.class))
+        {
+            world.removeObject(this);
+            GameOver gameWorld = new GameOver();
+            Greenfoot.setWorld(gameWorld);
+        }
     }   
+    
 }
