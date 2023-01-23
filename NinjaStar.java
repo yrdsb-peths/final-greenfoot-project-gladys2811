@@ -19,13 +19,10 @@ public class NinjaStar extends Actor
         
         //Game over if Ninja touches the ninja star
         MyWorld world = (MyWorld) getWorld();
-        if (getX() <= 0)
+        if (this.isAtEdge())
         {
-            world.removeObject(this);
-            GameOver gameWorld = new GameOver();
-            Greenfoot.setWorld(gameWorld);
+            getWorld().removeObject(this);
         }
-        
         else if (this.isTouching(Ninja.class))
         {
             world.removeObject(this);

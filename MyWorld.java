@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    SimpleTimer starTimer = new SimpleTimer();
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +19,16 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+    
+    public void act()
+    {
+        if (starTimer.millisElapsed () > 400)
+        {
+            starTimer.mark();
+            createNinjaStar();
+        }
+    }
+    
     public void gameOver()
     {
         Label gameOverLabel = new Label ("Game Over", 100);
