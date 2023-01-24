@@ -24,12 +24,10 @@ public class NinjaStar extends Actor
         if (this.isAtEdge())
         {
             getWorld().removeObject(this);
-            world.addObject(this,575,369);
-            world.addScore();
         }
         else if (this.isTouching(Ninja.class))
         {
-            world.removeObject(this);
+            getWorld().removeObject(this);
             GameOver gameWorld = new GameOver();
             Greenfoot.setWorld(gameWorld);
         }

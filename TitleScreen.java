@@ -40,5 +40,8 @@ public class TitleScreen extends World
         Label label = new Label("Press < space > to start game", 40);
         addObject(label,328,270);
         label.setLocation(311,265);
+        Label label2 = new Label("Use < space > to jump and dodge stars", 30);
+        addObject(label2,297,314);
+        label2.setLocation(314,305);
     }
 }

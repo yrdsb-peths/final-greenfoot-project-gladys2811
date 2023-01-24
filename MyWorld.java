@@ -10,7 +10,7 @@ public class MyWorld extends World
 {
     SimpleTimer starTimer = new SimpleTimer();
     Label scoreLabel;
-    int score = 1;
+    int score = 0;
     /**
      * Constructor for objects of class MyWorld.
      * 
